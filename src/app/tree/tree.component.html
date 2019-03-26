@@ -3,7 +3,7 @@
   <div *ngFor="let root of treeRoots">
       {{root.text}}
       <div *ngIf="root.children">
-          <div *ngFor="let child of root.children">
+          <div style="padding-left: 5px" *ngFor="let child of root.children">
               <app-tree [treeRoots]="[child]"></app-tree>
           </div>
       </div>

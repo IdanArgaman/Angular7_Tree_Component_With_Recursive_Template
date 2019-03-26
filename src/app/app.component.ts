@@ -14,7 +14,19 @@ export class AppComponent {
       children: [
         {
           id: '1.1',
-          text: 'Item1.1'
+          text: 'Item1.1',
+          children: [
+            {
+              id: '1.1.1',
+              text: 'Item1.1.1',
+              children: [
+                {
+                  id: '1.1.1.1',
+                  text: 'Item1.1.1.1',
+                }
+              ]
+            }
+          ]
         },
         {
           id: '1.2',
