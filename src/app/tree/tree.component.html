@@ -1,0 +1,11 @@
+
+<div *ngIf="treeRoots">
+  <div *ngFor="let root of treeRoots">
+      {{root.text}}
+      <div *ngIf="root.children">
+          <div *ngFor="let child of root.children">
+              <app-tree [treeRoots]="[child]"></app-tree>
+          </div>
+      </div>
+  </div>
+</div>
